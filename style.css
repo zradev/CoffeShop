@@ -14,7 +14,10 @@ h3,
 p {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-    background-color: rgba(82, 20, 11, 0.5);
+}
+
+body p {
+    padding-bottom: 50px;
 }
 
 header a {
@@ -53,7 +56,7 @@ header {
 .header-top {
     background-color: #8B1705;
     color: white;
-    padding: 5px 0;
+    padding: 10px 0;
     text-align: right;
 }
 
@@ -110,5 +113,29 @@ header {
 
 .section-catalog img {
     max-width: 50%;
-    height: 80%;
+    height: 65%;
+}
+
+.section-catalog i {
+    color: #8B1705;
+}
+
+.section-brands {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.section-brands div {
+    width: 100%;
+
+}
+
+.section-brands img {
+    display: inline-block;
+    width: 125px;
+    height: 105px;
+    vertical-align: middle;
+    margin: 0 45px;
+}
+
 }
