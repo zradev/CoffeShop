@@ -64,7 +64,7 @@ header {
 .header-top {
     background-color: #8B1705;
     color: white;
-    padding: 10px 0;
+    padding-top: 10px;
     text-align: right;
 }
 
@@ -94,20 +94,17 @@ header {
 }
 
 .section-intro div {
-    display: inline-block;
-    max-width: 33%;
-    padding: 0;
-    margin: 0;
-    vertical-align: middle;
+    max-width: 100%;
+    max-height: 700px;
 
+    vertical-align: middle;
 }
 
 .section-intro img {
     max-width: 100%;
-    max-height: 100%;
+    max-height: 700px;
     padding: 0;
-    margin: auto;
-    display: block;
+
 
 }
 
@@ -149,7 +146,7 @@ header {
 }
 
 .row {
-    padding-top: 50px;
+    padding-top: 10px;
     border-bottom: 2px solid #523849;
 }
 
@@ -194,4 +191,12 @@ footer p {
     padding-top: 15px;
     padding-left: 15px;
     text-align: left;
+}
+
+.carousel {
+    overflow: hidden;
+}
+
+.carousel-item {
+    overflow: hidden;
 }
