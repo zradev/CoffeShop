@@ -1,3 +1,4 @@
+html,
 body {
     min-height: 100vh;
     display: flex;
@@ -5,7 +6,10 @@ body {
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
 }
 
 h1,
@@ -64,7 +68,12 @@ header {
     text-align: right;
 }
 
-.header-bot,
+.header-bot {
+    background-color: #36252C;
+    color: white;
+}
+
+
 .header-mid {
     width: 100%;
     background-color: #36252C;
@@ -75,10 +84,7 @@ header {
     text-align: center;
 }
 
-.header-bot>div {
-    display: inline-block;
-    vertical-align: middle;
-}
+
 
 .section-intro {
     text-align: center;
@@ -163,4 +169,29 @@ footer img {
 footer p {
     border-bottom: 1px solid white;
     padding: 10px 0px;
+}
+
+.checked {
+    color: orange;
+}
+
+.rating {
+    text-align: right;
+    border-bottom: 1px solid #523849;
+}
+
+.container {
+    max-width: 100%;
+    padding: 0;
+}
+
+.section-reviews p {
+    padding: 10px;
+    text-align: left;
+}
+
+.section-reviews h6 {
+    padding-top: 15px;
+    padding-left: 15px;
+    text-align: left;
 }
