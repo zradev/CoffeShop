@@ -1,19 +1,38 @@
 .banner {
-    display: flex;
-    justify-content: end;
-    background-color: #8B1705;
-    padding: 15px;
+  display: flex;
+  justify-content: end;
+  background-color: #8b1705;
+  padding: 15px;
 }
 
 .banner a {
-    align-items: center;
-    display: flex;
-    color: white;
-    font-weight: 500;
-    margin-right: 10px;
+  align-items: center;
+  display: flex;
+  color: white;
+  font-weight: 500;
+  margin-right: 10px;
 }
 
 .banner a span {
-    margin-left: 10px;
-    display: block;
+  margin-left: 10px;
+  display: block;
 }
+
+.navbar {
+  background-color: #36252c;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.menu li {
+  text-decoration: none;
+  margin: 15px;
+}
+
+/* TODO: Make the header responsive. */

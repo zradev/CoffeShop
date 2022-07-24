@@ -1,15 +1,17 @@
-import React from 'react';
-import Banner from './Banner';
-import './Header.css';
+import React from "react";
+import Banner from "./banner/Banner";
+import "./Header.css";
+import Navbar from "./navbar/Navbar";
 
 const Header = () => {
   return (
     <>
-      <div className="container">
-        <Banner/>
-      </div>
+      <header>
+        <Banner />
+        <Navbar />
+      </header>
     </>
   );
-}
+};
 
 export default Header;
