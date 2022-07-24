@@ -19,20 +19,28 @@
 }
 
 .navbar {
+  padding-top: 10px;
   background-color: #36252c;
   text-align: center;
-  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo img {
+  max-width: 100%;
 }
 
 .menu ul {
   display: flex;
   justify-content: center;
   list-style: none;
+  max-width: 100%;
+  flex-wrap: wrap;
 }
 
 .menu li {
   text-decoration: none;
-  margin: 15px;
+  margin: 0 15px;
 }
 
 /* TODO: Make the header responsive. */
