@@ -1,0 +1,19 @@
+.banner {
+    display: flex;
+    justify-content: end;
+    background-color: #8B1705;
+    padding: 15px;
+}
+
+.banner a {
+    align-items: center;
+    display: flex;
+    color: white;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.banner a span {
+    margin-left: 10px;
+    display: block;
+}
