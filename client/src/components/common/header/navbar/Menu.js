@@ -1,4 +1,5 @@
 import React from "react";
+import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { nav } from "../../../data/Data";
 
@@ -12,6 +13,14 @@ const Menu = () => {
               <Link to={list.path}>{list.text}</Link>
             </li>
           ))}
+          <li>
+            <form>
+              <input type="search" placeholder="Search" />
+              <button>
+                <FaSearch />
+              </button>
+            </form>
+          </li>
         </ul>
       </nav>
     </>
