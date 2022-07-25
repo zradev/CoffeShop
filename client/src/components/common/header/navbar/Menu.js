@@ -1,27 +1,28 @@
-import React from "react";
-import { FaSearch } from "react-icons/fa";
+import React, { useState } from "react";
+import { FaSearch, FaTimes, FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { nav } from "../../../data/Data";
 
 const Menu = () => {
+  const [navList, setNavList] = useState(false);
+
   return (
     <>
       <nav className="menu">
-        <ul>
+        <ul className={navList ? "small" : "flex"}>
           {nav.map((list, index) => (
             <li key={index}>
-              <Link to={list.path}>{list.text}</Link>
+              <Link to={list.path} onClick={() => setNavList(false)}>
+                {list.text}
+              </Link>
             </li>
           ))}
-          <li>
-            <form>
-              <input type="search" placeholder="Search" />
-              <button>
-                <FaSearch />
-              </button>
-            </form>
-          </li>
         </ul>
+        <div className="toggle">
+          <button onClick={() => setNavList(!navList)}>
+            {navList ? <FaTimes /> : <FaBars />}
+          </button>
+        </div>
       </nav>
     </>
   );

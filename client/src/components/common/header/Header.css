@@ -43,4 +43,62 @@
   margin: 0 15px;
 }
 
-/* TODO: Make the header responsive. */
+.toggle {
+  display: none;
+}
+
+@media screen and (max-width: 810px) {
+  .banner {
+    display: none;
+  }
+  .logo img {
+    width: 80%;
+  }
+
+  .toggle {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+  }
+
+  .menu .flex {
+    display: none;
+  }
+
+  .small {
+    position: fixed;
+    top: 0;
+    left: -1000px;
+    height: 100%;
+    width: 70vw;
+    background: white;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    z-index: 9999;
+    animation: slide 0.5s forwards;
+  }
+
+  .small li a {
+    display: flex;
+    color: #2a363b;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 16px 24px;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .small li {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #eee;
+  }
+  .small li:hover {
+    background-color: #eee;
+  }
+}
+@keyframes slide {
+  100% {
+    left: 0;
+  }
+}
