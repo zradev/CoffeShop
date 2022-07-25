@@ -34,3 +34,22 @@ export const slides = [
   { img: require("../../images/coffee-machine-adzuna.jpg") },
   { img: require("../../images/coffee-machine.jpg") },
 ];
+
+export const categories = [
+  {
+    img: require("../../images/espresso-machine.jpg"),
+    name: "Espresso Machines",
+  },
+  {
+    img: require("../../images/espresso-grinder.jpg"),
+    name: "Coffee Grinders",
+  },
+  {
+    img: require("../../images/coffee-accessories.jpg"),
+    name: "Accessories",
+  },
+  {
+    img: require("../../images/coffee-beans.jpg"),
+    name: "Coffee",
+  },
+];
