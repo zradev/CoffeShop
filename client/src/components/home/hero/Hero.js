@@ -8,6 +8,7 @@ const Hero = () => {
       <section className="hero">
         <div className="container">
           <Carousel />
+          <button>PRODUCTS</button>
         </div>
       </section>
     </>
