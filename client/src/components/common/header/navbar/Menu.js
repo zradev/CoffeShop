@@ -9,7 +9,7 @@ const Menu = () => {
   return (
     <>
       <nav className="menu">
-        <ul className={navList ? "small" : "flex"}>
+        <ul className={navList ? "small" : "small flex"}>
           {nav.map((list, index) => (
             <li key={index}>
               <Link to={list.path} onClick={() => setNavList(false)}>

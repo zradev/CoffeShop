@@ -1,0 +1,44 @@
+.swiper-wrapper {
+  text-align: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.slider-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.brand {
+  margin: 10px;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.brand:hover {
+  transform: translateY(0) scale(1.2);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+}
+
+.brand img {
+  width: 80%;
+  height: 80%;
+  max-width: 150px;
+  max-height: 100px;
+}
+
+@media screen and (max-width: 800px) {
+  .brand {
+    margin: 0;
+  }
+
+  .brand:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  .swiper {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+  }
+}
