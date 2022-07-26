@@ -53,3 +53,21 @@ export const categories = [
     name: "Coffee",
   },
 ];
+
+export const brands = [
+  { img: require("../../images/brands/eureka.png"), name: "eureka" },
+  { img: require("../../images/brands/la-marzocco.png"), name: "la-marozocco" },
+  { img: require("../../images/brands/mahlkonig.png"), name: "mahlkonig" },
+  { img: require("../../images/brands/profitec.jpg"), name: "profitec" },
+  {
+    img: require("../../images/brands/rocket-espresso.jpeg"),
+    name: "rocket-espresso",
+  },
+  { img: require("../../images/brands/acacia.jpg"), name: "acacia" },
+  { img: require("../../images/brands/bwt.jpg"), name: "bwt" },
+
+  { img: require("../../images/brands/fellow.jpg"), name: "fellow" },
+  { img: require("../../images/brands/rancilio.jpg"), name: "rancilio" },
+  { img: require("../../images/brands/brewista.jpg"), name: "brewista" },
+  { img: require("../../images/brands/vms.jpg"), name: "vms" },
+];

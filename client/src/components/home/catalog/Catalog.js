@@ -8,11 +8,13 @@ const Catalog = () => {
   return (
     <>
       <section className="catalog">
-        <Heading title="CATALOG" subtitle="Shop by product category" />
-        <div className="content">
-          {categories.map((category, index) => (
-            <Category key={index} name={category.name} img={category.img} />
-          ))}
+        <div className="container">
+          <Heading title="CATALOG" subtitle="Shop by product category" />
+          <div className="content">
+            {categories.map((category, index) => (
+              <Category key={index} name={category.name} img={category.img} />
+            ))}
+          </div>
         </div>
       </section>
     </>

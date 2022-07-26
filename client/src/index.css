@@ -8,6 +8,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.container {
+  position: relative;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -20,6 +24,6 @@ code {
 
 .heading {
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 500;
 }
