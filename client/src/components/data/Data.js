@@ -71,3 +71,29 @@ export const brands = [
   { img: require("../../images/brands/brewista.jpg"), name: "brewista" },
   { img: require("../../images/brands/vms.jpg"), name: "vms" },
 ];
+
+export const content = [
+  {
+    img: require("../../images/content-images/bus.png"),
+    title: "WORLDWIDE SHIPPING",
+    subtitle: "We ship all over the world!",
+    text: "Click here for more information",
+    path: "/shipping",
+  },
+  {
+    img: require("../../images/content-images/smile.png"),
+
+    title: "REQUEST A DISCOUNT COUPON",
+    subtitle: "Looking for the best price on a particular product?",
+    text: "Request Discount Now!",
+    path: "/discount",
+  },
+  {
+    img: require("../../images/content-images/euro.png"),
+
+    title: "VAT TAX DEDUCTION",
+    subtitle: "Find out when it is possible to deduct VAT",
+    text: "Click here for more information",
+    path: "/taxes",
+  },
+];

@@ -1,8 +1,8 @@
 import React from "react";
 import Brands from "./brands/Brands";
 import Catalog from "./catalog/Catalog";
+import Content from "./content/Content";
 import Hero from "./hero/Hero";
-import "./Home.css";
 
 const Home = () => {
   return (
@@ -10,6 +10,7 @@ const Home = () => {
       <Hero />
       <Catalog />
       <Brands />
+      <Content />
     </>
   );
 };
