@@ -82,7 +82,6 @@ export const content = [
   },
   {
     img: require("../../images/content/smile.png"),
-
     title: "REQUEST A DISCOUNT COUPON",
     subtitle: "Looking for the best price on a particular product?",
     text: "Request Discount Now!",
@@ -90,7 +89,6 @@ export const content = [
   },
   {
     img: require("../../images/content/euro.png"),
-
     title: "VAT TAX DEDUCTION",
     subtitle: "Find out when it is possible to deduct VAT",
     text: "Click here for more information",
@@ -162,4 +160,12 @@ export const news = [
     datePosted: "2022/07/23",
     path: "/article",
   },
+];
+
+export const information = [
+  { name: "Terms and conditions", path: "/terms" },
+  { name: "Warranty", path: "/warranty" },
+  { name: "Shipment", path: "/shipment" },
+  { name: "Contacts", path: "/contacts" },
+  { name: "FAQ & Policy", path: "/faq" },
 ];

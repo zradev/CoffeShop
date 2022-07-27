@@ -26,7 +26,7 @@
   flex-direction: column;
 }
 
-.logo img {
+.header .logo img {
   max-width: 100%;
 }
 
