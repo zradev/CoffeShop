@@ -1,14 +1,18 @@
 import React, { useState } from "react";
-import { FaSearch, FaTimes, FaBars } from "react-icons/fa";
+import { FaTimes, FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { nav } from "../../../data/Data";
-
+import ClickAwayListener from "@mui/material/ClickAwayListener";
 const Menu = () => {
   const [navList, setNavList] = useState(false);
 
+  const handleClickAway = () => {
+    setNavList(false);
+  };
+
   return (
-    <>
-      <nav className="menu">
+    <ClickAwayListener onClickAway={handleClickAway}>
+      <div className="menu">
         <ul className={navList ? "small" : "small flex"}>
           {nav.map((list, index) => (
             <li key={index}>
@@ -18,13 +22,13 @@ const Menu = () => {
             </li>
           ))}
         </ul>
-        <div className="toggle">
+        <div className={navList ? "toggle open" : "toggle "}>
           <button onClick={() => setNavList(!navList)}>
             {navList ? <FaTimes /> : <FaBars />}
           </button>
         </div>
-      </nav>
-    </>
+      </div>
+    </ClickAwayListener>
   );
 };
 

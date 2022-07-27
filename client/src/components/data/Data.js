@@ -74,14 +74,14 @@ export const brands = [
 
 export const content = [
   {
-    img: require("../../images/content-images/bus.png"),
+    img: require("../../images/content/bus.png"),
     title: "WORLDWIDE SHIPPING",
     subtitle: "We ship all over the world!",
     text: "Click here for more information",
     path: "/shipping",
   },
   {
-    img: require("../../images/content-images/smile.png"),
+    img: require("../../images/content/smile.png"),
 
     title: "REQUEST A DISCOUNT COUPON",
     subtitle: "Looking for the best price on a particular product?",
@@ -89,11 +89,77 @@ export const content = [
     path: "/discount",
   },
   {
-    img: require("../../images/content-images/euro.png"),
+    img: require("../../images/content/euro.png"),
 
     title: "VAT TAX DEDUCTION",
     subtitle: "Find out when it is possible to deduct VAT",
     text: "Click here for more information",
     path: "/taxes",
+  },
+];
+
+export const news = [
+  {
+    img: require("../../images/news/espressoilly.jpg"),
+    title: "Start your coffee subscription!",
+    author: "Zlatomir Radev",
+    datePosted: "2022/07/26",
+    path: "/article",
+  },
+  {
+    img: require("../../images/news/Love_Coffee.jpg"),
+    title: "Start your coffee subscription!",
+    author: "Zlatomir Radev",
+    datePosted: "2022/07/26",
+    path: "/article",
+  },
+  {
+    img: require("../../images/news/special-coffee.jpg"),
+    title: "What is your favourite coffee?",
+    author: "Zlatomir Radev",
+    datePosted: "2022/07/26",
+    path: "/article",
+  },
+  {
+    img: require("../../images/news/espressoilly.jpg"),
+    title: "Start your coffee subscription!",
+    author: "Zlatomir Radev",
+    datePosted: "2022/07/26",
+    path: "/article",
+  },
+  {
+    img: require("../../images/news/Love_Coffee.jpg"),
+    title: "Today is the Coffee Day!",
+    author: "Coffee Shop - Plovdiv",
+    datePosted: "2022/07/22",
+    path: "/article",
+  },
+  {
+    img: require("../../images/news/special-coffee.jpg"),
+    title: "Start your coffee subscription!",
+    author: "Zlatomir Radev",
+    datePosted: "2022/07/26",
+    path: "/article",
+  },
+  {
+    img: require("../../images/news/espressoilly.jpg"),
+    title: "Start your coffee subscription!",
+    author: "Coffee Shop - Plovdiv",
+    datePosted: "2022/06/11",
+    path: "/article",
+  },
+  {
+    img: require("../../images/news/Love_Coffee.jpg"),
+    title: "Start your coffee subscription!",
+    author: "Zlatomir Radev",
+    datePosted: "2022/07/21",
+    path: "/article",
+  },
+  {
+    img: require("../../images/news/special-coffee.jpg"),
+    title: "Start your coffee subscription!",
+    author: "Ivan Rusev",
+    datePosted: "2022/07/23",
+    path: "/article",
   },
 ];
