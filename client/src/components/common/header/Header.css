@@ -61,6 +61,10 @@
     margin: 20px;
   }
 
+  .menu .open button {
+    background-color: red;
+  }
+
   .menu .flex {
     display: none;
   }
@@ -70,7 +74,7 @@
     top: 0;
     left: -1000px;
     height: 100%;
-    width: 70vw;
+    width: 55%;
     background: white;
     flex-direction: column;
     margin: 0;
@@ -97,6 +101,13 @@
     background-color: #eee;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .small {
+    width: 78%;
+  }
+}
+
 @keyframes slide {
   100% {
     left: 0;

@@ -1,15 +1,3 @@
-.swiper-wrapper {
-  text-align: center;
-  align-items: center;
-  padding: 5px;
-}
-
-.slider-inner {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
 .brand {
   margin: 10px;
   justify-content: center;
@@ -20,6 +8,18 @@
 .brand:hover {
   transform: translateY(0) scale(1.2);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+}
+
+.brands .swiper-wrapper {
+  text-align: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.brands .slider-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .brand img {
@@ -38,7 +38,7 @@
     transform: none;
     box-shadow: none;
   }
-  .swiper {
+  .brands .swiper {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
   }
 }
