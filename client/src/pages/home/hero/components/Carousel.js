@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import "./Hero.css";
-import { slides } from "../../data/Data";
+// import "./Hero.css";
+import { slides } from "../../../../data/Data";
 import CarouselItem from "./CarouselItem";
 
 const Carousel = () => {

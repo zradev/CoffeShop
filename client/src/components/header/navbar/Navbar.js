@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../../../images/logo.jpg";
+import logo from "../../../assets/images/logo/logo.jpg";
 import Menu from "./Menu";
 
 const Navbar = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import Hyperlink from "../../Hyperlink";
+import Hyperlink from "../../common/Hyperlink";
 import {
   FaPhoneAlt,
   FaEnvelope,
