@@ -1,6 +1,6 @@
 import React from "react";
-import "./Content.css";
-import { content } from "../../data/Data";
+import "../Content.css";
+import { content } from "../../../../data/Data";
 import Subcontent from "./Subcontent";
 
 const Content = () => {

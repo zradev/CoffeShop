@@ -1,8 +1,8 @@
 import React from "react";
-import "./Brands.css";
-import Heading from "./../../common/Heading";
-import { brands } from "../../data/Data";
+import "../Brands.css";
+import { brands } from "../../../../data/Data";
 import Slider from "./Slider";
+import Heading from "./../../../../components/common/Heading";
 
 const Brands = () => {
   return (

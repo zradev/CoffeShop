@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
-import footerLogo from "../../../images/logo-footer.png";
-import footerLogoEsteso from "../../../images/logo-footer-esteso.png";
+import footerLogo from "../../assets/images/logo/logo-footer.png";
+import footerLogoEsteso from "../../assets/images/logo/logo-footer-esteso.png";
 
 import { categories, information } from "../../data/Data";
 import Box from "./Box";

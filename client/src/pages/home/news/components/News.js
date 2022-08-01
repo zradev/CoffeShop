@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import "./News.css";
+import "../News.css";
 import Article from "./Article";
-import { news } from "../../data/Data";
+import { news } from "../../../../data/Data";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 
 import "swiper/css";
-import Heading from "./../../common/Heading";
+import Heading from "./../../../../components/common/Heading";
 
 const News = () => {
   const [width, setWidth] = useState(window.innerWidth);

@@ -1,8 +1,8 @@
 import React from "react";
-import "./Catalog.css";
-import { categories } from "../../data/Data";
+import "../Catalog.css";
+import { categories } from "../../../../data/Data";
 import Category from "./Category";
-import Heading from "../../common/Heading";
+import Heading from "./../../../../components/common/Heading";
 
 const Catalog = () => {
   return (
