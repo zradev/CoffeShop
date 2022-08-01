@@ -1,16 +1,18 @@
 footer {
   background-color: #36252c;
   color: white;
+  box-sizing: border-box;
 }
 
 footer .container {
   display: grid;
-  grid-template-columns: 6fr 2fr 2fr;
+  max-width: 100%;
+
+  grid-template-columns: 40vw 15vw 15vw 20vw;
   grid-gap: 20px;
 }
 
 footer .logo {
-  display: flex;
   padding: 50px;
 }
 
@@ -19,6 +21,79 @@ footer .logo img {
   height: 150px;
 }
 
+footer .sublogo img {
+  height: 30%;
+  max-width: 100%;
+}
+
 .box {
   padding: 10px;
+  margin-top: 15px;
+}
+
+.box h2 {
+  margin: 0 0 20px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.box ul {
+  padding: 0;
+}
+
+.box li {
+  border-bottom: solid 1px #b9b9b9;
+  padding-top: 6px;
+  list-style: none;
+}
+
+.box li a {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 8px 0;
+}
+
+.box .text {
+  margin-top: 20px;
+  max-width: 100%;
+}
+
+.box .text span {
+  display: block;
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 30px;
+  }
+
+  footer .logo {
+    justify-content: center;
+    padding: 80px 0 0 0;
+  }
+
+  footer .container {
+    grid-template-columns: auto;
+    grid-gap: 20px;
+  }
+
+  .box li {
+    border-bottom: solid 1px #b9b9b950;
+    padding-top: 6px;
+    list-style: none;
+  }
+
+  .box li a,
+  .box .text {
+    font-size: 18px;
+  }
+
+  .box h2,
+  .box span {
+    font-size: 28px;
+  }
 }

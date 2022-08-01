@@ -39,18 +39,22 @@ export const categories = [
   {
     img: require("../../images/espresso-machine.jpg"),
     name: "Espresso Machines",
+    path: "/machines",
   },
   {
     img: require("../../images/espresso-grinder.jpg"),
     name: "Coffee Grinders",
+    path: "/grinders",
   },
   {
     img: require("../../images/coffee-accessories.jpg"),
     name: "Accessories",
+    path: "/accessories",
   },
   {
     img: require("../../images/coffee-beans.jpg"),
     name: "Coffee",
+    path: "/coffee",
   },
 ];
 

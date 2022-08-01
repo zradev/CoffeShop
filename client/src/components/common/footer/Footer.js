@@ -1,7 +1,11 @@
 import React from "react";
 import "./Footer.css";
 import footerLogo from "../../../images/logo-footer.png";
+import footerLogoEsteso from "../../../images/logo-footer-esteso.png";
+
 import { categories, information } from "../../data/Data";
+import Box from "./Box";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -11,22 +15,21 @@ const Footer = () => {
           <div className="logo">
             <img src={footerLogo} alt="" />
           </div>
-          <div className="box">
-            <ul>
-              <h2>Information: </h2>
-              {information.map((val, index) => (
-                <li key={index}>{val.name}</li>
-              ))}
-            </ul>
-          </div>
-          <div className="box">
-            <ul>
-              <h2>Categories: </h2>
+          <Box heading={"Information:"} arr={information} />
+          <Box heading={"Categories:"} arr={categories} />
 
-              {categories.map((category, index) => (
-                <li key={index}>{category.name}</li>
-              ))}
-            </ul>
+          <div className="box">
+            <div className="sublogo">
+              <img src={footerLogoEsteso} alt="" />
+            </div>
+            <div className="text">
+              Stay informed about the world of coffee and Espresso Coffee Shop!
+            </div>
+            <div className="text">
+              <span>Blog:</span>
+              News and heart from the world some coffee:{" "}
+              <Link to="/blog">go to the blog</Link>
+            </div>
           </div>
         </div>
       </footer>
