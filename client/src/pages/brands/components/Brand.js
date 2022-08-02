@@ -4,9 +4,10 @@ import { Link } from "react-router-dom";
 const Brand = (props) => {
   return (
     <>
-      <div className="brand-home">
-        <Link to={`/brands/${props.name}`}>
-          <img src={props.img} alt="Brand" />
+      <div className="brand">
+        <img src={props.img} alt="" />
+        <Link to={props.path}>
+          <button>Products</button>
         </Link>
       </div>
     </>

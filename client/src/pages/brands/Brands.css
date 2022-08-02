@@ -1,0 +1,97 @@
+.brands {
+  max-width: 100%;
+}
+
+.brands .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.brand {
+  position: relative;
+  display: flex;
+  border: 1px solid lightgray;
+  width: 20vw;
+  height: 25vw;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.brand:hover {
+  transform: translateY(0) scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+}
+
+.brand img {
+  width: 13vw;
+  height: 13vw;
+  margin-bottom: 25px;
+}
+
+.brand button {
+  position: absolute;
+  left: 50%;
+  top: 85%;
+  width: 10vw;
+  height: 3vw;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: transparent;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 20px;
+
+  border: 2px solid white;
+  cursor: pointer;
+  border-radius: 5px;
+  background: #292929;
+}
+
+.brand button:hover {
+  background: #666;
+  color: #fff;
+}
+
+@media screen and (max-width: 800px) {
+  .brand {
+    width: 25vw;
+    height: 30vw;
+    margin: 15px;
+  }
+
+  .brand img {
+    width: 20vw;
+    height: 15vw;
+    margin-bottom: 25px;
+  }
+
+  .brand button {
+    width: 15vw;
+    height: 5vw;
+  }
+}
+@media screen and (max-width: 550px) {
+  .brand {
+    width: 80vw;
+    height: 90vw;
+  }
+
+  .brand img {
+    width: 60vw;
+    height: 50vw;
+    margin-bottom: 25px;
+  }
+
+  .brand button {
+    left: 50%;
+    top: 87%;
+    font-size: 24px;
+    width: 40vw;
+    height: 15vw;
+  }
+}

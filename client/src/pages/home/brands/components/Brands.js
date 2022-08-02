@@ -7,7 +7,7 @@ import Heading from "./../../../../components/common/Heading";
 const Brands = () => {
   return (
     <>
-      <section className="brands">
+      <section className="brands-home">
         <div className="container">
           <Heading title="OUR BRANDS" subtitle=" Carefully selected for you" />
           <div className="content">

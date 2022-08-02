@@ -8,11 +8,13 @@ import Content from "./content/components/Content";
 const Home = () => {
   return (
     <>
-      <Hero />
-      <Catalog />
-      <Brands />
-      <Content />
-      <News />
+      <div className="home">
+        <Hero />
+        <Catalog />
+        <Brands />
+        <Content />
+        <News />
+      </div>
     </>
   );
 };
