@@ -1,28 +1,28 @@
-.brand {
+.brand-home {
   margin: 10px;
   justify-content: center;
   width: 100%;
   height: 100%;
 }
 
-.brand:hover {
+.brand-home:hover {
   transform: translateY(0) scale(1.2);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
 }
 
-.brands .swiper-wrapper {
+.brands-home .swiper-wrapper {
   text-align: center;
   align-items: center;
   padding: 5px;
 }
 
-.brands .slider-inner {
+.brands-home .slider-inner {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.brand img {
+.brand-home img {
   width: 80%;
   height: 80%;
   max-width: 150px;
@@ -30,15 +30,15 @@
 }
 
 @media screen and (max-width: 800px) {
-  .brand {
+  .brand-home {
     margin: 0;
   }
 
-  .brand:hover {
+  .brand-home:hover {
     transform: none;
     box-shadow: none;
   }
-  .brands .swiper {
+  .brands-home .swiper {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
   }
 }
