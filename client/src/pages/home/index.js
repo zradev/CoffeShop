@@ -1,16 +1,16 @@
 import React from "react";
 import Hero from "./hero/components/Hero";
-import Catalog from "./catalog/components/Catalog";
+import Categories from "./categories/components/Categories";
 import Brands from "./brands/components/Brands";
-import News from "./news/components/News";
 import Content from "./content/components/Content";
+import News from "./news/components/News";
 
 const Home = () => {
   return (
     <>
       <div className="home">
         <Hero />
-        <Catalog />
+        <Categories />
         <Brands />
         <Content />
         <News />
