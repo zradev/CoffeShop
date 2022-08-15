@@ -164,6 +164,8 @@ export const products = {
   ],
   grinders: [
     {
+      img: require("../assets/images/products/grinder.jpg"),
+      imgAlt: require("../assets/images/products/grinder-2.jpg"),
       name: "Espresso Grinder",
       price: 640,
       description:
@@ -171,6 +173,8 @@ export const products = {
       brand: "la-marozocco",
     },
     {
+      img: require("../assets/images/products/grinder.jpg"),
+      imgAlt: require("../assets/images/products/grinder-2.jpg"),
       name: "Espresso Grinder",
       price: 640,
       description:
@@ -178,6 +182,8 @@ export const products = {
       brand: "la-marozocco",
     },
     {
+      img: require("../assets/images/products/grinder.jpg"),
+      imgAlt: require("../assets/images/products/grinder-2.jpg"),
       name: "Espresso Grinder",
       price: 640,
       description:
@@ -185,6 +191,8 @@ export const products = {
       brand: "la-marozocco",
     },
     {
+      img: require("../assets/images/products/grinder.jpg"),
+      imgAlt: require("../assets/images/products/grinder-2.jpg"),
       name: "Espresso Grinder",
       price: 640,
       description:
@@ -192,6 +200,8 @@ export const products = {
       brand: "la-marozocco",
     },
     {
+      img: require("../assets/images/products/grinder.jpg"),
+      imgAlt: require("../assets/images/products/grinder-2.jpg"),
       name: "Espresso Grinder",
       price: 640,
       description:
@@ -199,6 +209,8 @@ export const products = {
       brand: "la-marozocco",
     },
     {
+      img: require("../assets/images/products/grinder.jpg"),
+      imgAlt: require("../assets/images/products/grinder-2.jpg"),
       name: "Espresso Grinder ASFD54",
       price: 640,
       description:
@@ -206,6 +218,8 @@ export const products = {
       brand: "la-marozocco",
     },
     {
+      img: require("../assets/images/products/grinder.jpg"),
+      imgAlt: require("../assets/images/products/grinder-2.jpg"),
       name: "Espresso Grinder JHSD231",
       price: 640,
       description:
@@ -213,6 +227,8 @@ export const products = {
       brand: "la-marozocco",
     },
     {
+      img: require("../assets/images/products/grinder.jpg"),
+      imgAlt: require("../assets/images/products/grinder-2.jpg"),
       name: "Espresso Grinder",
       price: 640,
       description:
@@ -220,6 +236,8 @@ export const products = {
       brand: "la-marozocco",
     },
     {
+      img: require("../assets/images/products/grinder.jpg"),
+      imgAlt: require("../assets/images/products/grinder-2.jpg"),
       name: "Espresso Grinder HDSA231",
       price: 640,
       description:
@@ -227,6 +245,8 @@ export const products = {
       brand: "la-marozocco",
     },
     {
+      img: require("../assets/images/products/grinder.jpg"),
+      imgAlt: require("../assets/images/products/grinder-2.jpg"),
       name: "Espresso Grinder ASFW23",
       price: 640,
       description:
@@ -234,6 +254,8 @@ export const products = {
       brand: "la-marozocco",
     },
     {
+      img: require("../assets/images/products/grinder.jpg"),
+      imgAlt: require("../assets/images/products/grinder-2.jpg"),
       name: "Espresso Grinder GSDD23",
       price: 640,
       description:
