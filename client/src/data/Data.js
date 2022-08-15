@@ -23,10 +23,6 @@ export const nav = [
     text: "Accessories",
     path: "/accessories",
   },
-  {
-    text: "Promotions",
-    path: "/promotions",
-  },
 ];
 
 export const slides = [
