@@ -6,6 +6,7 @@ import Home from "./pages/home";
 import Brands from "./pages/brands";
 import Coffee from "./pages/coffee";
 import Grinders from "./pages/grinders";
+import Machines from "./pages/machines";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/brands" element={<Brands />} />
           <Route path="/coffee" element={<Coffee />} />
           <Route path="/grinders" element={<Grinders />} />
+          <Route path="/machines" element={<Machines />} />
         </Routes>
         <Footer />
       </Router>

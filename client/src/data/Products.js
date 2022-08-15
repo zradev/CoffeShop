@@ -120,6 +120,8 @@ export const products = {
   ],
   machines: [
     {
+      img: require("../assets/images/products/machine.jpg"),
+      imgAlt: require("../assets/images/products/machine-2.jpg"),
       name: "Classical Espresso Machine",
       price: 1240,
       description:
@@ -127,6 +129,8 @@ export const products = {
       brand: "eureka",
     },
     {
+      img: require("../assets/images/products/machine.jpg"),
+      imgAlt: require("../assets/images/products/machine-2.jpg"),
       name: "Classical Espresso Machine",
       price: 1240,
       description:
@@ -134,6 +138,8 @@ export const products = {
       brand: "la-marozocco",
     },
     {
+      img: require("../assets/images/products/machine.jpg"),
+      imgAlt: require("../assets/images/products/machine-2.jpg"),
       name: "Classical Espresso Machine",
       price: 1640,
       description:
@@ -141,6 +147,8 @@ export const products = {
       brand: "eureka",
     },
     {
+      img: require("../assets/images/products/machine.jpg"),
+      imgAlt: require("../assets/images/products/machine-2.jpg"),
       name: "Classical Espresso Machine",
       price: 2240,
       description:
@@ -148,6 +156,8 @@ export const products = {
       brand: "la-marozocco",
     },
     {
+      img: require("../assets/images/products/machine.jpg"),
+      imgAlt: require("../assets/images/products/machine-2.jpg"),
       name: "Classical Espresso Machine",
       price: 1690,
       description:
@@ -155,6 +165,8 @@ export const products = {
       brand: "la-marozocco",
     },
     {
+      img: require("../assets/images/products/machine.jpg"),
+      imgAlt: require("../assets/images/products/machine-2.jpg"),
       name: "Classical Espresso Machine",
       price: 1320,
       description:
