@@ -275,4 +275,114 @@ export const products = {
       brand: "la-marozocco",
     },
   ],
+  accessories: [
+    {
+      img: require("../assets/images/products/accessories.jpg"),
+      imgAlt: require("../assets/images/products/accessories-2.jpg"),
+      name: "Accessory BN241",
+      price: 55,
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum tenetur ex recusandae repudiandae odit voluptas quae nobis unde soluta, sunt eos at officia placeat, explicabo qui modi laudantium ipsam quas.",
+      brand: "la-marozocco",
+    },
+    {
+      img: require("../assets/images/products/accessories.jpg"),
+      imgAlt: require("../assets/images/products/accessories-2.jpg"),
+      name: "Accessory SD166",
+      price: 60,
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum tenetur ex recusandae repudiandae odit voluptas quae nobis unde soluta, sunt eos at officia placeat, explicabo qui modi laudantium ipsam quas.",
+      brand: "la-marozocco",
+    },
+    {
+      img: require("../assets/images/products/accessories.jpg"),
+      imgAlt: require("../assets/images/products/accessories-2.jpg"),
+      name: "Accessory BN241",
+      price: 10,
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum tenetur ex recusandae repudiandae odit voluptas quae nobis unde soluta, sunt eos at officia placeat, explicabo qui modi laudantium ipsam quas.",
+      brand: "la-marozocco",
+    },
+    {
+      img: require("../assets/images/products/accessories.jpg"),
+      imgAlt: require("../assets/images/products/accessories-2.jpg"),
+      name: "Accessory BN241",
+      price: 20,
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum tenetur ex recusandae repudiandae odit voluptas quae nobis unde soluta, sunt eos at officia placeat, explicabo qui modi laudantium ipsam quas.",
+      brand: "la-marozocco",
+    },
+    {
+      img: require("../assets/images/products/accessories.jpg"),
+      imgAlt: require("../assets/images/products/accessories-2.jpg"),
+      name: "Accessory BN241",
+      price: 52,
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum tenetur ex recusandae repudiandae odit voluptas quae nobis unde soluta, sunt eos at officia placeat, explicabo qui modi laudantium ipsam quas.",
+      brand: "la-marozocco",
+    },
+    {
+      img: require("../assets/images/products/accessories.jpg"),
+      imgAlt: require("../assets/images/products/accessories-2.jpg"),
+      name: "Accessory BN241",
+      price: 12,
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum tenetur ex recusandae repudiandae odit voluptas quae nobis unde soluta, sunt eos at officia placeat, explicabo qui modi laudantium ipsam quas.",
+      brand: "la-marozocco",
+    },
+    {
+      img: require("../assets/images/products/accessories.jpg"),
+      imgAlt: require("../assets/images/products/accessories-2.jpg"),
+      name: "Accessory ETH9K",
+      price: 22,
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum tenetur ex recusandae repudiandae odit voluptas quae nobis unde soluta, sunt eos at officia placeat, explicabo qui modi laudantium ipsam quas.",
+      brand: "la-marozocco",
+    },
+    {
+      img: require("../assets/images/products/accessories.jpg"),
+      imgAlt: require("../assets/images/products/accessories-2.jpg"),
+      name: "Accessory SHA265",
+      price: 20,
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum tenetur ex recusandae repudiandae odit voluptas quae nobis unde soluta, sunt eos at officia placeat, explicabo qui modi laudantium ipsam quas.",
+      brand: "la-marozocco",
+    },
+    {
+      img: require("../assets/images/products/accessories.jpg"),
+      imgAlt: require("../assets/images/products/accessories-2.jpg"),
+      name: "Accessory KRS256",
+      price: 64,
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum tenetur ex recusandae repudiandae odit voluptas quae nobis unde soluta, sunt eos at officia placeat, explicabo qui modi laudantium ipsam quas.",
+      brand: "la-marozocco",
+    },
+    {
+      img: require("../assets/images/products/accessories.jpg"),
+      imgAlt: require("../assets/images/products/accessories-2.jpg"),
+      name: "Accessory BN121",
+      price: 11,
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum tenetur ex recusandae repudiandae odit voluptas quae nobis unde soluta, sunt eos at officia placeat, explicabo qui modi laudantium ipsam quas.",
+      brand: "la-marozocco",
+    },
+    {
+      img: require("../assets/images/products/accessories.jpg"),
+      imgAlt: require("../assets/images/products/accessories-2.jpg"),
+      name: "Accessory BN631",
+      price: 20,
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum tenetur ex recusandae repudiandae odit voluptas quae nobis unde soluta, sunt eos at officia placeat, explicabo qui modi laudantium ipsam quas.",
+      brand: "la-marozocco",
+    },
+    {
+      img: require("../assets/images/products/accessories.jpg"),
+      imgAlt: require("../assets/images/products/accessories-2.jpg"),
+      name: "Accessory CS421",
+      price: 7,
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum tenetur ex recusandae repudiandae odit voluptas quae nobis unde soluta, sunt eos at officia placeat, explicabo qui modi laudantium ipsam quas.",
+      brand: "la-marozocco",
+    },
+  ],
 };

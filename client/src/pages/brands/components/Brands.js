@@ -1,4 +1,3 @@
-import React from "react";
 import "../Brands.css";
 import { brands } from "../../../data/Data";
 import Brand from "./Brand";

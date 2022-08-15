@@ -1,4 +1,3 @@
-import React from "react";
 import Catalogue from "../../../components/catalogue/Catalogue";
 import Heading from "../../../components/common/Heading";
 
