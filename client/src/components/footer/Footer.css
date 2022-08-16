@@ -12,6 +12,11 @@ footer .container {
   grid-gap: 20px;
 }
 
+footer .container a {
+  color: white;
+  display: inline-block;
+}
+
 footer .logo {
   padding: 50px;
 }

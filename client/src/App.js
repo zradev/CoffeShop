@@ -1,14 +1,20 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import useScrollToTop from "./hooks/useScrollToTop";
 import Header from "./components/header/Header";
-import Footer from "./components/footer/Footer";
+import { Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import Brands from "./pages/brands";
 import Coffee from "./pages/coffee";
 import Grinders from "./pages/grinders";
 import Machines from "./pages/machines";
 import Accessories from "./pages/accessories";
-import useScrollToTop from "./hooks/useScrollToTop";
+import Footer from "./components/footer/Footer";
+import AboutUs from "./pages/information/about/components/AboutUs";
+import Contacts from "./pages/information/contacts/components/Contacts";
+import FAQ from "./pages/information/faq/components/FAQ";
+import Shipment from "./pages/information/shipment/components/Shipment";
+import Terms from "./pages/information/terms/components/Terms";
+import Warranty from "./pages/information/warranty/components/Warranty";
 
 function App() {
   useScrollToTop();
@@ -22,6 +28,12 @@ function App() {
         <Route path="/grinders" element={<Grinders />} />
         <Route path="/machines" element={<Machines />} />
         <Route path="/accessories" element={<Accessories />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/contacts" element={<Contacts />} />
+        <Route path="/faq" element={<FAQ />} />
+        <Route path="/shipment" element={<Shipment />} />
+        <Route path="/terms" element={<Terms />} />
+        <Route path="/warranty" element={<Warranty />} />
       </Routes>
       <Footer />
     </div>
