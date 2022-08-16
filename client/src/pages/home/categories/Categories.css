@@ -19,6 +19,10 @@
   transition: 0.5s ease;
 }
 
+.category a {
+  color: black;
+}
+
 .category img {
   width: 100%;
   height: 100%;

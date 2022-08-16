@@ -63,7 +63,7 @@ const Catalogue = (props) => {
       <div className="wrapper">
         <div className="left">
           <label>
-            {"Brands"}
+            <span style={{ fontWeight: "bold" }}>Brands</span>
             {menuItems.map((item, index) => (
               <Checkbox
                 label={item}
@@ -72,10 +72,6 @@ const Catalogue = (props) => {
                 key={index}
               />
             ))}
-            <Checkbox
-              label="Randium"
-              onChange={() => handleChange("Randium")}
-            />
           </label>
         </div>
 
