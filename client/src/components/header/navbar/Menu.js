@@ -23,7 +23,7 @@ const Menu = () => {
           ))}
         </ul>
         <div className={navList ? "toggle open" : "toggle "}>
-          <button onClick={() => setNavList(!navList)}>
+          <button onClick={() => setNavList(!navList)} aria-label="menu">
             {navList ? <FaTimes /> : <FaBars />}
           </button>
         </div>

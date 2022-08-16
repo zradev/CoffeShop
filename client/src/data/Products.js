@@ -236,7 +236,7 @@ export const products = {
       price: 640,
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum tenetur ex recusandae repudiandae odit voluptas quae nobis unde soluta, sunt eos at officia placeat, explicabo qui modi laudantium ipsam quas.",
-      brand: "la-marozocco",
+      brand: "profitec",
     },
     {
       img: require("../assets/images/products/grinder.jpg"),
@@ -254,7 +254,7 @@ export const products = {
       price: 640,
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum tenetur ex recusandae repudiandae odit voluptas quae nobis unde soluta, sunt eos at officia placeat, explicabo qui modi laudantium ipsam quas.",
-      brand: "la-marozocco",
+      brand: "profitec",
     },
     {
       img: require("../assets/images/products/grinder.jpg"),
@@ -292,7 +292,7 @@ export const products = {
       price: 60,
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum tenetur ex recusandae repudiandae odit voluptas quae nobis unde soluta, sunt eos at officia placeat, explicabo qui modi laudantium ipsam quas.",
-      brand: "la-marozocco",
+      brand: "fellow",
     },
     {
       img: require("../assets/images/products/accessories.jpg"),
@@ -337,7 +337,7 @@ export const products = {
       price: 22,
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum tenetur ex recusandae repudiandae odit voluptas quae nobis unde soluta, sunt eos at officia placeat, explicabo qui modi laudantium ipsam quas.",
-      brand: "la-marozocco",
+      brand: "profitec",
     },
     {
       img: require("../assets/images/products/accessories.jpg"),
@@ -355,7 +355,7 @@ export const products = {
       price: 64,
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum tenetur ex recusandae repudiandae odit voluptas quae nobis unde soluta, sunt eos at officia placeat, explicabo qui modi laudantium ipsam quas.",
-      brand: "la-marozocco",
+      brand: "fellow",
     },
     {
       img: require("../assets/images/products/accessories.jpg"),
@@ -382,7 +382,7 @@ export const products = {
       price: 7,
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum tenetur ex recusandae repudiandae odit voluptas quae nobis unde soluta, sunt eos at officia placeat, explicabo qui modi laudantium ipsam quas.",
-      brand: "la-marozocco",
+      brand: "profitec",
     },
   ],
 };
