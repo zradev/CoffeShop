@@ -38,24 +38,18 @@ p {
   font-weight: 500;
 }
 
-.container .content {
-  max-width: 100%;
-  margin: 0 40px;
-  line-height: 32px;
-}
-
 a {
   text-decoration: none;
   color: white;
 }
 
-a:hover {
-  filter: brightness(50%);
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.swiper-wrapper {
+  padding-bottom: 50px;
 }
 
 @media screen and (max-width: 800px) {
