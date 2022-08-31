@@ -43,6 +43,11 @@ a {
   color: white;
 }
 
+header a:hover,
+footer a:hover {
+  filter: brightness(50%);
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

@@ -27,13 +27,92 @@
   flex-direction: row;
 }
 .product {
-  margin: 2px;
-  max-width: calc(20% - 4px);
-  min-width: 100px;
-  min-height: 100px;
+  margin: 5px;
+  margin-bottom: 15px;
+  max-width: calc(20% - 10px);
+  min-width: 150px;
+  min-height: 200px;
 }
 
 .product img {
   max-width: 100%;
   max-height: 100%;
+}
+
+.product p {
+  color: #000000;
+  margin: 0;
+  margin-bottom: 3px;
+}
+
+.product h3 {
+  color: rgb(35, 31, 32);
+  margin: 0;
+}
+
+.viewController {
+  display: none;
+}
+
+.viewController .btn {
+  display: none;
+}
+.viewController .single-on {
+  background-image: url("../../assets/images/components/single_on.svg");
+}
+
+.viewController .single-off {
+  background-image: url("../../assets/images/components/single_off.svg");
+}
+
+.viewController .multi-on {
+  background-image: url("../../assets/images/components/multi_on.svg");
+}
+
+.viewController .multi-off {
+  background-image: url("../../assets/images/components/multi_off.svg");
+}
+
+@media screen and (max-width: 800px) {
+  .left {
+    display: none;
+  }
+
+  .product {
+    max-width: calc(50% - 10px);
+  }
+
+  .singleView > * {
+    max-width: calc(100% - 20px);
+  }
+
+  .viewController {
+    display: flex;
+    max-width: 100vw;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .viewController .btn {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    margin: 15px;
+    background-repeat: no-repeat;
+  }
+
+  .viewController .filters {
+    align-items: center;
+  }
+
+  .viewController span {
+    color: #000000;
+  }
+
+  .viewController .filters button {
+    background-color: transparent;
+    font-size: 16px;
+    border: none;
+    margin: 15px;
+  }
 }

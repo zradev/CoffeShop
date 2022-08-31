@@ -13,8 +13,8 @@ const Product = (props) => {
             onMouseOut={(e) => (e.currentTarget.src = props.img)}
           />
           <p>{props.name}</p>
+          <h3>${props.price}</h3>
         </Link>
-        <h3>${props.price}</h3>
       </div>
     </>
   );

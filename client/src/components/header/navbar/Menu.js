@@ -4,27 +4,30 @@ import { Link } from "react-router-dom";
 import { nav } from "../../../data/Data";
 import ClickAwayListener from "@mui/material/ClickAwayListener";
 const Menu = () => {
-  const [navList, setNavList] = useState(false);
+  const [isNavVisible, setIsNavVisible] = useState(false);
 
   const handleClickAway = () => {
-    setNavList(false);
+    setIsNavVisible(false);
   };
 
   return (
     <ClickAwayListener onClickAway={handleClickAway}>
       <div className="menu">
-        <ul className={navList ? "small" : "small flex"}>
+        <ul className={isNavVisible ? "small" : "small flex"}>
           {nav.map((list, index) => (
             <li key={index}>
-              <Link to={list.path} onClick={() => setNavList(false)}>
+              <Link to={list.path} onClick={() => setIsNavVisible(false)}>
                 {list.text}
               </Link>
             </li>
           ))}
         </ul>
-        <div className={navList ? "toggle open" : "toggle "}>
-          <button onClick={() => setNavList(!navList)} aria-label="menu">
-            {navList ? <FaTimes /> : <FaBars />}
+        <div className={isNavVisible ? "toggle open" : "toggle "}>
+          <button
+            onClick={() => setIsNavVisible(!isNavVisible)}
+            aria-label="menu"
+          >
+            {isNavVisible ? <FaTimes /> : <FaBars />}
           </button>
         </div>
       </div>

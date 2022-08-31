@@ -5,10 +5,10 @@ import Navbar from "./navbar/Navbar";
 
 const Header = () => {
   return (
-    <div className="header">
+    <header>
       <Banner />
       <Navbar />
-    </div>
+    </header>
   );
 };
 
