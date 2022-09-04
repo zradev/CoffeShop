@@ -61,8 +61,16 @@ const Catalogue = (props) => {
     return arr;
   };
 
+  const getPriceRange = () => {
+    const min = Math.min(...items.map((o) => o.price));
+    const max = Math.max(...items.map((o) => o.price));
+
+    return { min, max };
+  };
+
   return (
     <>
+      {console.log(getPriceRange())}
       <div className="viewController">
         <div className="filters">
           <button

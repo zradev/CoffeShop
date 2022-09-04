@@ -51,11 +51,10 @@
 }
 
 .viewController {
-  display: none;
+  display: flex;
 }
 
 .viewController .btn {
-  display: none;
 }
 .viewController .single-on {
   background-image: url("../../assets/images/components/single_on.svg");
