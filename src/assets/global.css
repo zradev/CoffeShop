@@ -1,0 +1,85 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body > * {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.heading {
+  text-align: center;
+  font-weight: 500;
+  margin: 60px 0;
+}
+
+.heading h1 {
+  text-transform: uppercase;
+  font-size: 26px;
+}
+
+.marginX {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.container {
+  position: relative;
+}
+
+.container a {
+  color: #666;
+  display: block;
+}
+
+.container a,
+.container p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+label input {
+  accent-color: rgb(65, 65, 65);
+  outline: 0px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid rgb(200, 199, 199);
+  position: relative;
+  margin: 0px 10px 0px 0px;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+header a:hover,
+footer a:hover {
+  filter: brightness(50%);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.swiper-wrapper {
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 800px) {
+  .heading {
+    font-size: 14px;
+  }
+}

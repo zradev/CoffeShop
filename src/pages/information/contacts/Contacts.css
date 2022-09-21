@@ -1,0 +1,64 @@
+.contact {
+  max-width: 50%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.contact form div {
+  display: flex;
+}
+
+.contact textarea {
+  width: 1050px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.contact input,
+.contact textarea {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+.contact button {
+  width: 100%;
+  height: auto;
+  min-height: 48px;
+  cursor: pointer;
+  color: white;
+  border-style: none;
+  border-radius: 3px;
+  background: 0% 0% / auto rgb(65, 65, 65);
+}
+
+.contact form {
+  margin-bottom: 100px;
+}
+
+.contact h4 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .contact {
+    max-width: 90%;
+  }
+
+  .contact h4 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .contact form div {
+    flex-direction: column;
+  }
+
+  .contact input {
+    width: 100%;
+  }
+}
