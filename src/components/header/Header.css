@@ -36,13 +36,13 @@ header .logo img {
   max-width: 100%;
 }
 
-.menu {
+.nav-items {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.menu ul {
+.nav-items ul {
   display: flex;
   justify-content: center;
   list-style: none;
@@ -50,12 +50,12 @@ header .logo img {
   flex-wrap: wrap;
 }
 
-.menu li {
+.nav-items li {
   text-decoration: none;
   margin: 0 15px;
 }
 
-.menu ul button {
+.nav-items ul button {
   position: absolute;
   top: 15px;
   right: 10px;
@@ -67,7 +67,6 @@ header .logo img {
 .nav-btns {
   display: flex;
   align-items: center;
-  width: 82vw;
   margin-bottom: 10px;
   margin-top: 10px;
   flex-direction: row-reverse;
@@ -115,6 +114,10 @@ header .logo img {
     align-items: center;
   }
 
+  .nav-btns {
+    width: 82vw;
+  }
+
   .banner {
     display: none;
   }
@@ -128,7 +131,7 @@ header .logo img {
     margin: 20px;
   }
 
-  .menu .blocked {
+  .nav-items .blocked {
     display: none;
   }
 

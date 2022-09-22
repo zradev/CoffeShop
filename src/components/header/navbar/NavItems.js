@@ -3,7 +3,7 @@ import { FaTimes, FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { nav } from "../../../data/Data";
 import ClickAwayListener from "@mui/material/ClickAwayListener";
-const Menu = () => {
+const NavItems = () => {
   const [isNavVisible, setIsNavVisible] = useState(false);
 
   const handleClickAway = () => {
@@ -12,9 +12,12 @@ const Menu = () => {
 
   return (
     <ClickAwayListener onClickAway={handleClickAway}>
-      <div className="menu">
+      <div className="nav-items">
         <ul className={isNavVisible ? "small" : "small blocked"}>
-          <button onClick={() => setIsNavVisible(false)}>
+          <button
+            className={isNavVisible ? null : "blocked"}
+            onClick={() => setIsNavVisible(false)}
+          >
             <FaTimes />
           </button>
           {nav.map((list, index) => (
@@ -50,4 +53,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default NavItems;

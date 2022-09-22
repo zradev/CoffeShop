@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../../../assets/images/logo/logo.jpg";
-import Menu from "./Menu";
+import NavItems from "./NavItems";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -13,7 +13,7 @@ const Navbar = () => {
           </div>
         </Link>
 
-        <Menu />
+        <NavItems />
       </div>
     </>
   );
