@@ -36,6 +36,12 @@ header .logo img {
   max-width: 100%;
 }
 
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .menu ul {
   display: flex;
   justify-content: center;
@@ -49,13 +55,62 @@ header .logo img {
   margin: 0 15px;
 }
 
+.menu ul button {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  font-size: 35px;
+  border: none;
+  background-color: transparent;
+}
+
+.nav-btns {
+  display: flex;
+  align-items: center;
+  width: 82vw;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
 .toggle {
   display: none;
 }
 
+.cart-btn {
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/*
+{ width: "3rem", height: "3rem", position: "relative" }
+*/
+
+.cart-quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #8d3225;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 12px;
+  font-weight: 600;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  transform: translate(25%, 25%);
+}
+
 @media screen and (max-width: 810px) {
   .navbar {
-    flex-direction: row;
     justify-content: flex-end;
     align-items: center;
   }
@@ -73,7 +128,7 @@ header .logo img {
     margin: 20px;
   }
 
-  .menu .flex {
+  .menu .blocked {
     display: none;
   }
 
