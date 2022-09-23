@@ -1,4 +1,6 @@
-export const products = {
+export const products = {};
+
+const productss = {
   coffee: [
     {
       img: require("../assets/images/products/coffeeV2.jpg"),

@@ -1,79 +1,35 @@
-.wrapper {
-  justify-content: space-between;
-}
-
-.left {
-  margin: 15px;
-  background-color: #fff;
-  display: block;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 20%;
-  float: left;
-}
-
-.left label {
-  margin: 3px;
-  color: rgb(68, 68, 68);
-  width: 200px;
+.catalogue {
+  margin-bottom: 100px;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
 }
 
-.left .price {
-  margin-top: 20px;
+.filterBtn,
+.filters-open button,
+.filters-bottom button,
+.filters-head {
+  display: none;
 }
 
-.results {
-  width: 100%;
+.filters {
+  width: 22vw;
+  margin-right: 25px;
 }
 
-.right {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  margin-bottom: 50px;
+.filters label {
+  color: #444;
+  font-weight: bold;
 }
 
 .products {
+  width: 78vw;
   display: flex;
   flex-wrap: wrap;
-  position: relative;
-  text-transform: none;
-  width: 100%;
-}
-.product {
-  max-width: calc(25% - 4px);
-  margin-bottom: 16px;
-}
-
-.product img {
-  min-width: 100px;
-  min-height: 100px;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.product p {
-  color: #000000;
-  font-size: 14px;
-  margin: 0;
-  margin-bottom: 3px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-.product h4 {
-  color: rgb(35, 31, 32);
-  margin: 0;
 }
 
 .viewController {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
 }
 
@@ -97,124 +53,19 @@
   background-image: url("../../assets/images/components/multi_off.svg");
 }
 
-.filter-top {
-  display: none;
-}
-
-.filter-bot {
-  display: none;
-}
-.filter-bot button {
-  width: 100%;
-  height: auto;
-  min-height: 48px;
-  font-size: 16px;
-  cursor: pointer;
-  box-sizing: border-box;
-  font-weight: 600;
-  letter-spacing: 0.56px;
-  color: white;
-  border-style: none;
-  background: 0% 0% / auto rgb(65, 65, 65);
-  transition: none 0s ease 0s;
-}
-
-.no-results {
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.no-results img {
-  width: 100%;
-  height: 65%;
-  left: -10px;
-}
-
-.no-results .text {
-  margin-bottom: 40px;
-}
-
-.no-results > * {
-  text-align: center;
-}
-
 @media screen and (max-width: 800px) {
-  .left {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    position: fixed;
-    top: 0;
-    left: -1000px;
-    height: 100%;
+  .catalogue {
+    flex-direction: column;
+  }
+
+  .products {
+    position: relative;
+    text-transform: none;
     width: 100%;
-    padding: 0px;
-    margin: 0px;
-    overflow: auto;
-    animation: slide 0.5s forwards;
-    z-index: 9999;
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 0.25px;
   }
 
-  .left > * {
-    margin: 15px;
-  }
-
-  .left label {
-    width: 100%;
-    margin-bottom: 8px;
-  }
-
-  .view-btns {
-    display: flex;
-  }
-
-  .filter-top {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .filter-top button {
-    border: none;
-    background-color: transparent;
-    font-size: 20px;
-  }
-
-  .filter-mid {
-    padding: 10px 20px 60px;
-    margin: 0px;
-    overflow: auto;
-    overflow-x: hidden;
-  }
-
-  .filter-mid > * {
-    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
-  }
-
-  .filter-bot {
+  .btn {
     display: block;
-    left: 10px;
-    right: 10px;
-    padding: 10px;
-    bottom: 0px;
-    list-style: none;
-    align-content: space-between;
-  }
-
-  .flex {
-    display: none;
-  }
-
-  .product {
-    max-width: calc(50% - 10px);
-    margin-left: 8px;
-  }
-
-  .singleView > * {
-    max-width: calc(100% - 20px);
   }
 
   .viewController {
@@ -224,8 +75,9 @@
     align-items: center;
     justify-content: space-around;
   }
-  .viewController .filters {
-    display: block;
+
+  .view-btns {
+    display: flex;
   }
 
   .viewController .btn {
@@ -236,18 +88,85 @@
     background-repeat: no-repeat;
   }
 
-  .viewController .filters {
-    align-items: center;
+  .view-btns {
+    display: flex;
+  }
+  .filterBtn {
+    display: block;
   }
 
-  .viewController span {
-    color: #000000;
-  }
-
-  .viewController .filters button {
-    background-color: transparent;
-    font-size: 16px;
+  .filterBtn button {
+    display: block;
     border: none;
+    background-color: transparent;
+  }
+
+  .filters-head {
+    position: sticky;
+    top: 0px;
+    z-index: 9999;
+    background-color: white;
+    display: flex;
+    font-size: 18px;
     margin: 15px;
+    height: 60px;
+  }
+
+  .filters-bottom {
+    position: sticky;
+    background-color: white;
+    align-content: space-between;
+    bottom: 0;
+    display: block;
+    left: 10px;
+    list-style: none;
+    padding: 10px;
+    right: 10px;
+  }
+
+  .filters-bottom button {
+    display: block;
+    background: 0 0 / auto #414141;
+    border-style: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    height: auto;
+    letter-spacing: 0.56px;
+    min-height: 48px;
+    transition: none 0s ease 0s;
+    width: 100%;
+  }
+
+  .filters-head button {
+    display: flex;
+    justify-content: end;
+    background-color: initial;
+    border: none;
+    font-size: 26px;
+    margin: 15px;
+  }
+
+  .filters {
+    display: none;
+  }
+  .filters-open {
+    background-color: white;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    position: fixed;
+    top: 0;
+    left: -1000px;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    overflow: auto;
+    animation: slide 0.5s forwards;
+    z-index: 9999;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
   }
 }

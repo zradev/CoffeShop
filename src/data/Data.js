@@ -55,27 +55,27 @@ export const categories = [
 ];
 
 export const brands = [
-  { img: require("../assets/images/brands/eureka.png"), name: "eureka" },
+  { img: require("../assets/images/brands/eureka.webp"), name: "eureka" },
   {
-    img: require("../assets/images/brands/la-marzocco.png"),
+    img: require("../assets/images/brands/la-marzocco.webp"),
     name: "la-marozocco",
   },
   {
-    img: require("../assets/images/brands/mahlkonig.png"),
+    img: require("../assets/images/brands/mahlkonig.webp"),
     name: "mahlkonig",
   },
-  { img: require("../assets/images/brands/profitec.jpg"), name: "profitec" },
+  { img: require("../assets/images/brands/profitec.webp"), name: "profitec" },
   {
-    img: require("../assets/images/brands/rocket-espresso.jpeg"),
+    img: require("../assets/images/brands/rocket-espresso.webp"),
     name: "rocket-espresso",
   },
-  { img: require("../assets/images/brands/acacia.jpg"), name: "acacia" },
-  { img: require("../assets/images/brands/bwt.jpg"), name: "bwt" },
+  { img: require("../assets/images/brands/acacia.webp"), name: "acacia" },
+  { img: require("../assets/images/brands/bwt.webp"), name: "bwt" },
 
-  { img: require("../assets/images/brands/fellow.jpg"), name: "fellow" },
-  { img: require("../assets/images/brands/rancilio.jpg"), name: "rancilio" },
-  { img: require("../assets/images/brands/brewista.jpg"), name: "brewista" },
-  { img: require("../assets/images/brands/vms.jpg"), name: "vms" },
+  { img: require("../assets/images/brands/fellow.webp"), name: "fellow" },
+  { img: require("../assets/images/brands/rancilio.webp"), name: "rancilio" },
+  { img: require("../assets/images/brands/brewista.webp"), name: "brewista" },
+  { img: require("../assets/images/brands/vms.webp"), name: "vms" },
 ];
 
 export const content = [

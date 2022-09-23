@@ -1,0 +1,39 @@
+.property-filter {
+  max-width: 100%;
+}
+
+.property-filter ul {
+  list-style: none;
+  padding: 0;
+  margin-left: 10px;
+}
+
+.property-filter li {
+  color: #444;
+}
+
+.property-filter input {
+  accent-color: #414141;
+  border: 1px solid #c8c7c7;
+  border-radius: 0;
+  cursor: pointer;
+  height: 18px;
+  margin: 0 10px 0 0;
+  outline: 0;
+  position: relative;
+  width: 18px;
+}
+
+@media screen and (max-width: 800px) {
+  .property-filter {
+    color: #444;
+    margin-left: 25px;
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  .property-filter label {
+    font-size: 22px;
+    font-weight: bold;
+  }
+}
