@@ -1,22 +1,28 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-import { products } from "../../../../data/Products";
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 import { useScrollLock } from "./../../../../hooks/useScrollLock";
+import products from "../../../../data/products.json";
 import Redirect from "./../../../../pages/redirect/components/Redirect";
+import Gallery from "./Gallery";
 import "./Page.css";
 
-const ProductPage = (props) => {
-  const { id } = useParams();
+const ProductPage = () => {
   const [activeImgIndex, setActiveImgIndex] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
   const [openImgIndex, setOpenImgIndex] = useState(activeImgIndex);
   const [quantity, setQuantity] = useState(1);
-
-  const product = products[props.category][id] || "";
-  const images = [product.img, product.imgAlt] || "";
-
   const { lockScroll, unlockScroll } = useScrollLock();
+
+  const path = window.location.pathname.split("/");
+
+  const product =
+    products.find(
+      (product) =>
+        product.id === +path[2].split("-")[1] &&
+        product.name === path[2].split("-")[0] &&
+        product.category === path[1]
+    ) || {};
+  const images = product.images;
 
   useEffect(() => {
     isOpen ? lockScroll() : unlockScroll();
@@ -52,38 +58,31 @@ const ProductPage = (props) => {
 
   return (
     <>
-      {product ? (
+      {console.log(window.location.pathname)}
+      {Object.keys(product).length > 0 ? (
         <>
           <div className="product-name">
-            <h1>{product.name}</h1>
+            <h1 style={{ textTransform: "capitalize" }}>{product.name}</h1>
           </div>
           <div className="product-page">
-            <div className="gallery">
-              <div className="zoom">
-                <img
-                  src={images[activeImgIndex]}
-                  alt="active"
-                  onClick={() => handleOnClick()}
-                />
-              </div>
-              <div className="options">
-                {images.map((image, index) => (
-                  <img
-                    src={image}
-                    alt=""
-                    onClick={() => setActiveImgIndex(() => index)}
-                    className={activeImgIndex === index ? "active" : ""}
-                    key={index}
-                  />
-                ))}
-              </div>
-            </div>
+            <Gallery
+              images={images}
+              onClick={handleOnClick}
+              activeImgIndex={activeImgIndex}
+              setActiveImgIndex={setActiveImgIndex}
+            />
             <div className="description">
               <h2>
                 ${product.price} <span>Tax included</span>
               </h2>
               <h3>Brand: {product.brand}</h3>
               <p>{product.description}</p>
+              <h5>
+                Location:{" "}
+                <span style={{ textTransform: "uppercase" }}>
+                  {product.location}
+                </span>
+              </h5>
               <div className="order">
                 <div className="quantity">
                   <button onClick={handleDecrement}>-</button>

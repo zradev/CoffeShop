@@ -29,27 +29,13 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/brands" element={<Brands />} />
           <Route path="/coffee" element={<Coffee />} />
-          <Route
-            path="/coffee/product/:id"
-            element={<ProductPage category="coffee" />}
-          />
+          <Route path="/coffee/:id" element={<ProductPage />} />
           <Route path="/grinders" element={<Grinders />} />
-          <Route
-            path="/grinders/product/:id"
-            element={<ProductPage category="grinders" />}
-          />
+          <Route path="/grinders/:id" element={<ProductPage />} />
           <Route path="/machines" element={<Machines />} />
-          <Route
-            path="/machines/product/:id"
-            element={<ProductPage category="machines" />}
-          />
-          <Route path="/machines/product/*" element={<Redirect />} />
-
+          <Route path="/machines/:id" element={<ProductPage />} />
           <Route path="/accessories" element={<Accessories />} />
-          <Route
-            path="/accessories/product/:id"
-            element={<ProductPage category="accessories" />}
-          />
+          <Route path="/accessories/:id" element={<ProductPage />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/shipment" element={<Shipment />} />
