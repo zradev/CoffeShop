@@ -3,9 +3,9 @@ const Brand = (props) => {
     <>
       <div className="brand">
         <img src={props.img} alt="" />
-        {/* <Link to={props.path}>
-          <button>Products</button>
-        </Link> */}
+        <a href={props.href}>
+          <button>Website</button>
+        </a>
       </div>
     </>
   );

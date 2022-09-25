@@ -8,7 +8,7 @@ const Brands = () => {
       <div className="brands">
         <div className="content">
           {brands.map((brand, index) => (
-            <Brand img={brand.img} path={"TODO"} key={index} />
+            <Brand img={brand.img} key={index} href={brand.href} />
           ))}
         </div>
       </div>

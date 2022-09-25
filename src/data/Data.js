@@ -55,27 +55,62 @@ export const categories = [
 ];
 
 export const brands = [
-  { img: require("../assets/images/brands/eureka.webp"), name: "eureka" },
+  {
+    img: require("../assets/images/brands/eureka.webp"),
+    name: "eureka",
+    href: "https://www.eureka.co.it/en/default.aspx",
+  },
   {
     img: require("../assets/images/brands/la-marzocco.webp"),
     name: "la-marozocco",
+    href: "https://international.lamarzocco.com/en/",
   },
   {
     img: require("../assets/images/brands/mahlkonig.webp"),
     name: "mahlkonig",
+    href: "https://www.mahlkoenig.com/",
   },
-  { img: require("../assets/images/brands/profitec.webp"), name: "profitec" },
+  {
+    img: require("../assets/images/brands/profitec.webp"),
+    name: "profitec",
+    href: "https://www.profitec-espresso.com/en",
+  },
   {
     img: require("../assets/images/brands/rocket-espresso.webp"),
     name: "rocket-espresso",
+    href: "https://rocket-espresso.com/",
   },
-  { img: require("../assets/images/brands/acacia.webp"), name: "acacia" },
-  { img: require("../assets/images/brands/bwt.webp"), name: "bwt" },
+  {
+    img: require("../assets/images/brands/acacia.webp"),
+    name: "acacia",
+    href: "https://acaia.co/",
+  },
+  {
+    img: require("../assets/images/brands/bwt.webp"),
+    name: "bwt",
+    href: "https://www.bwt.com/en/",
+  },
 
-  { img: require("../assets/images/brands/fellow.webp"), name: "fellow" },
-  { img: require("../assets/images/brands/rancilio.webp"), name: "rancilio" },
-  { img: require("../assets/images/brands/brewista.webp"), name: "brewista" },
-  { img: require("../assets/images/brands/vms.webp"), name: "vms" },
+  {
+    img: require("../assets/images/brands/fellow.webp"),
+    name: "fellow",
+    href: "https://fellowproducts.com/",
+  },
+  {
+    img: require("../assets/images/brands/rancilio.webp"),
+    name: "rancilio",
+    href: "https://www.ranciliogroup.com/",
+  },
+  {
+    img: require("../assets/images/brands/brewista.webp"),
+    name: "brewista",
+    href: "https://brewista.co/",
+  },
+  {
+    img: require("../assets/images/brands/vms.webp"),
+    name: "vms",
+    href: "https://www.vmscoffee.com/",
+  },
 ];
 
 export const content = [

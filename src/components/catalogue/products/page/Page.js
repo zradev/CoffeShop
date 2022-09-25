@@ -5,6 +5,10 @@ import products from "../../../../data/products.json";
 import Redirect from "./../../../../pages/redirect/components/Redirect";
 import Gallery from "./Gallery";
 import "./Page.css";
+import { useShoppingCart } from "./../../../../context/ShoppingCartContext";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.min.css";
+import { formatCurrency } from "../../../../utils/formatCurrency";
 
 const ProductPage = () => {
   const [activeImgIndex, setActiveImgIndex] = useState(0);
@@ -12,8 +16,20 @@ const ProductPage = () => {
   const [openImgIndex, setOpenImgIndex] = useState(activeImgIndex);
   const [quantity, setQuantity] = useState(1);
   const { lockScroll, unlockScroll } = useScrollLock();
-
+  const { addItemQuantity } = useShoppingCart();
   const path = window.location.pathname.split("/");
+
+  const notify = () => {
+    toast.success("Product Added!", {
+      position: "top-right",
+      autoClose: 1500,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  };
 
   const product =
     products.find(
@@ -22,6 +38,7 @@ const ProductPage = () => {
         product.name === path[2].split("-")[0] &&
         product.category === path[1]
     ) || {};
+
   const images = product.images;
 
   useEffect(() => {
@@ -58,7 +75,6 @@ const ProductPage = () => {
 
   return (
     <>
-      {console.log(window.location.pathname)}
       {Object.keys(product).length > 0 ? (
         <>
           <div className="product-name">
@@ -73,7 +89,7 @@ const ProductPage = () => {
             />
             <div className="description">
               <h2>
-                ${product.price} <span>Tax included</span>
+                {formatCurrency(product.price)} <span>Tax included</span>
               </h2>
               <h3>Brand: {product.brand}</h3>
               <p>{product.description}</p>
@@ -91,7 +107,15 @@ const ProductPage = () => {
                   <p>90-Day Buyer Protection</p>
                 </div>
                 <div className="buy-btn">
-                  <button>Buy Now - ${product.price * quantity}</button>
+                  <button
+                    onClick={() => {
+                      addItemQuantity(product.id, quantity);
+                      setQuantity(1);
+                      notify();
+                    }}
+                  >
+                    Add To Cart - {formatCurrency(product.price * quantity)}
+                  </button>
                 </div>
               </div>
             </div>
@@ -129,6 +153,7 @@ const ProductPage = () => {
       ) : (
         <Redirect />
       )}
+      <ToastContainer />
     </>
   );
 };

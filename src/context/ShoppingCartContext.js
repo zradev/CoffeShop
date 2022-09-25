@@ -1,5 +1,6 @@
 import { createContext, useContext, useState } from "react";
-import { useLocalStorage } from "./../hooks/useLocalStorage";
+import { ShoppingCart } from "../components/shoppingCart/ShoppingCart";
+import { useLocalStorage } from "../hooks/useLocalStorage";
 
 const ShoppingCartContext = createContext({});
 
@@ -23,41 +24,19 @@ export const ShoppingCartProvider = ({ children }) => {
     return cartItems.find((item) => item.id === id)?.quantity || 0;
   };
 
-  const increaseItemQuantity = (id) => {
+  const addItemQuantity = (id, quantity) => {
     setCartItems((currItems) => {
       if (currItems.find((item) => item.id === id) == null) {
-        return [...currItems, { id, quantity: 1 }];
+        return [...currItems, { id, quantity: quantity }];
       } else {
         return currItems.map((item) => {
           if (item.id === id) {
-            return { ...item, quantity: item.quantity + 1 };
+            return { ...item, quantity: item.quantity + quantity };
           } else {
             return item;
           }
         });
       }
-    });
-  };
-
-  const decreaseItemQuantity = (id) => {
-    setCartItems((currItems) => {
-      if (currItems.find((item) => item.id === id)?.quantity === 1) {
-        return currItems.filter((item) => item.id !== id);
-      } else {
-        return currItems.map((item) => {
-          if (item.id === id) {
-            return { ...item, quantity: item.quantity - 1 };
-          } else {
-            return item;
-          }
-        });
-      }
-    });
-  };
-
-  const setItemQuantity = (id) => {
-    setCartItems((currItems) => {
-      return;
     });
   };
 
@@ -73,14 +52,14 @@ export const ShoppingCartProvider = ({ children }) => {
         openCart,
         closeCart,
         getItemQuantity,
-        increaseItemQuantity,
-        decreaseItemQuantity,
+        addItemQuantity,
         removeFromCart,
         cartQuantity,
         cartItems,
       }}
     >
       {children}
+      <ShoppingCart isOpen={isOpen} />
     </ShoppingCartContext.Provider>
   );
 };

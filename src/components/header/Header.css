@@ -59,9 +59,9 @@ header .logo img {
   position: absolute;
   top: 15px;
   right: 10px;
-  font-size: 35px;
   border: none;
-  background-color: transparent;
+  background-color: initial;
+  font-size: 26px;
 }
 
 .nav-btns {
@@ -86,10 +86,6 @@ header .logo img {
   background-color: transparent;
   cursor: pointer;
 }
-
-/*
-{ width: "3rem", height: "3rem", position: "relative" }
-*/
 
 .cart-quantity {
   display: flex;
@@ -133,6 +129,9 @@ header .logo img {
 
   .nav-items .blocked {
     display: none;
+  }
+  .nav-items ul {
+    width: 100%;
   }
 
   .small {

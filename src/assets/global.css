@@ -1,8 +1,8 @@
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
-body > * {
+* {
   max-width: 100%;
   box-sizing: border-box;
 }
@@ -47,9 +47,17 @@ body {
   font-weight: 500;
 }
 
+button {
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
   color: white;
+}
+
+p {
+  color: #414141;
 }
 
 label input {

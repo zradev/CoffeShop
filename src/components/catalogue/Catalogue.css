@@ -110,6 +110,11 @@
     font-size: 18px;
     margin: 15px;
     height: 60px;
+    max-width: 100%;
+  }
+
+  .filters-head p {
+    width: 100%;
   }
 
   .filters-bottom {
