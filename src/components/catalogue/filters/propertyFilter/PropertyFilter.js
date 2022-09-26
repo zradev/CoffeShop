@@ -11,10 +11,11 @@ const PropertyFilter = (props) => {
             <li key={index} className="select-item">
               <input
                 type="checkbox"
+                id="checkbox"
                 checked={props.selectedItems.includes(uniqueItem)}
                 onChange={() => props.handleItemSelection(uniqueItem)}
               />
-              <span>{uniqueItem}</span>
+              <label htmlFor="checkbox">{uniqueItem}</label>
             </li>
           ))}
         </ul>

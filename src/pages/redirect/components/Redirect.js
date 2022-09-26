@@ -6,7 +6,9 @@ const Redirect = () => {
     <>
       <div className="redirect">
         <img
-          src={require("../../../assets/images/components/redirect.webp")}
+          src={
+            "https://ik.imagekit.io/jtpsjzhns/images/components/redirect_-i7POAE6VW.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1664180783264"
+          }
           alt=""
         />
         <h3>This Page Isn't Available Right Now</h3>

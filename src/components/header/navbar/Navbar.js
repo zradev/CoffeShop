@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../../../assets/images/logo/logo.jpg";
 import NavItems from "./NavItems";
 import { Link } from "react-router-dom";
 import { useScrollLock } from "./../../../hooks/useScrollLock";
@@ -12,7 +11,12 @@ const Navbar = () => {
       <div className="navbar">
         <Link to="/" className="logo" onClick={unlockScroll()}>
           <div className="logo">
-            <img src={logo} alt="logo" />
+            <img
+              src={
+                "https://ik.imagekit.io/jtpsjzhns/images/logo/logo_FKqSxeS_e1.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1664180778762"
+              }
+              alt="logo"
+            />
           </div>
         </Link>
 

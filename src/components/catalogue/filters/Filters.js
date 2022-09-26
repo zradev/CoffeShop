@@ -1,19 +1,27 @@
-import React from "react";
+import React, { useMemo } from "react";
 import PropertyFilter from "./propertyFilter/PropertyFilter";
 import PriceRange from "./priceRange/PriceRange";
 
 const Filters = (props) => {
+  const uniqueBrandList = useMemo(() => {
+    return [...new Set(props.products.map((item) => item.brand))];
+  }, [props.products]);
+
+  const uniqueLocationList = useMemo(() => {
+    return [...new Set(props.products.map((item) => item.location))];
+  }, [props.products]);
+
   return (
     <>
       <PropertyFilter
         name="brands"
-        uniqueList={props.uniqueBrandList}
+        uniqueList={uniqueBrandList}
         selectedItems={props.selectedBrands}
         handleItemSelection={props.handleBrandSelection}
       />
       <PropertyFilter
         name="location"
-        uniqueList={props.uniqueLocationList}
+        uniqueList={uniqueLocationList}
         selectedItems={props.selectedLocation}
         handleItemSelection={props.handleLocationSelection}
       />

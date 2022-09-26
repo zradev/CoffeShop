@@ -38,19 +38,19 @@
   display: none;
 }
 .viewController .single-on {
-  background-image: url("../../assets/images/components/single_on.svg");
+  background-image: url("https://ik.imagekit.io/jtpsjzhns/images/components/single_on_LIlSmu67DE.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1664180783279");
 }
 
 .viewController .single-off {
-  background-image: url("../../assets/images/components/single_off.svg");
+  background-image: url("https://ik.imagekit.io/jtpsjzhns/images/components/single_off_7fXbhwxmO7.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1664180783357");
 }
 
 .viewController .multi-on {
-  background-image: url("../../assets/images/components/multi_on.svg");
+  background-image: url("https://ik.imagekit.io/jtpsjzhns/images/components/multi_on_VXVy0ft1g.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1664180783175");
 }
 
 .viewController .multi-off {
-  background-image: url("../../assets/images/components/multi_off.svg");
+  background-image: url("https://ik.imagekit.io/jtpsjzhns/images/components/multi_off_ViKe0Bl2_.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1664180783158");
 }
 
 @media screen and (max-width: 800px) {
@@ -70,7 +70,7 @@
 
   .viewController {
     display: flex;
-    width: 100vw;
+    max-width: 100vw;
     height: 100px;
     align-items: center;
     justify-content: space-around;

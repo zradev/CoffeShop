@@ -12,12 +12,8 @@ const Catalogue = (props) => {
   const [selectedLocation, setSelectedLocation] = useState([]);
   const [priceRange, setPriceRange] = useState([0, 9999999999]);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
-  const { lockScroll, unlockScroll } = useScrollLock();
   const [isSingleViewSelected, setIsSingleViewSelected] = useState(false);
-  const uniqueBrandList = [...new Set(productsDB.map((item) => item.brand))];
-  const uniqueLocationList = [
-    ...new Set(productsDB.map((item) => item.location)),
-  ];
+  const { lockScroll, unlockScroll } = useScrollLock();
 
   useEffect(() => {
     const categoryProducts = () => {
@@ -142,10 +138,9 @@ const Catalogue = (props) => {
             </button>
           </div>
           <Filters
-            uniqueBrandList={uniqueBrandList}
+            products={productsDB}
             selectedBrands={selectedBrands}
             handleBrandSelection={handleBrandSelection}
-            uniqueLocationList={uniqueLocationList}
             selectedLocation={selectedLocation}
             handleLocationSelection={handleLocationSelection}
             onPriceRangeChange={onPriceRangeChange}

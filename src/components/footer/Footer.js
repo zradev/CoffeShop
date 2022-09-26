@@ -1,8 +1,5 @@
 import React from "react";
 import "./Footer.css";
-import footerLogo from "../../assets/images/logo/logo-footer.png";
-import footerLogoEsteso from "../../assets/images/logo/logo-footer-esteso.png";
-
 import { categories, information } from "../../data/Data";
 import Box from "./Box";
 import { Link } from "react-router-dom";
@@ -13,14 +10,24 @@ const Footer = () => {
       <footer>
         <div className="container">
           <div className="logo">
-            <img src={footerLogo} alt="" />
+            <img
+              src={
+                "https://ik.imagekit.io/jtpsjzhns/images/logo/logo-footer_sC7XiCI8KB.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1664180778849"
+              }
+              alt=""
+            />
           </div>
           <Box heading={"Information:"} arr={information} />
           <Box heading={"Categories:"} arr={categories} />
 
           <div className="box">
             <div className="sublogo">
-              <img src={footerLogoEsteso} alt="" />
+              <img
+                src={
+                  "https://ik.imagekit.io/jtpsjzhns/images/logo/logo-footer-esteso_pVhzy4MY7.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1664180779008"
+                }
+                alt=""
+              />
             </div>
             <div className="text">
               Stay informed about the world of coffee and Espresso Coffee Shop!

@@ -23,6 +23,11 @@
   border-right: solid 1px #dadada;
 }
 
+.subcontent img {
+  height: 50px;
+  width: 50px;
+}
+
 .subcontent a,
 .subcontent p {
   width: 100%;

@@ -5,7 +5,9 @@ const NoResults = () => {
     <>
       <div className="no-results">
         <img
-          src={require("../../../assets/images/components/no_result_found.png")}
+          src={
+            "https://ik.imagekit.io/jtpsjzhns/images/components/no_result_found_Z_r7bpcKfG.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1664180783191"
+          }
           alt="no-results-found"
         />
         <div className="text">
